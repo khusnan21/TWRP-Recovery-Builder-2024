@@ -159,6 +159,7 @@ jobs:
     - name: Building Image 
       run: |
         cd workspace
+        source device/itel/P1102GT/vendorsetup.sh P1102GT
         source build/envsetup.sh
         export ALLOW_MISSING_DEPENDENCIES=true
         lunch ${{ env.DEVICE_MAKEFILE }}-eng && make clean && make ${{ github.event.inputs.BUILD_TARGET }}image -j$(nproc --all)
