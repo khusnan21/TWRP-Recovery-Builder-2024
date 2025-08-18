@@ -101,7 +101,10 @@ jobs:
       with:
         distribution: zulu
         java-version: 8
-
+        
+   - name: Clean Repo
+   
+device/transsion/mt6789-common
     - name: Install Git-Repo
       run: |
         mkdir ~/bin
