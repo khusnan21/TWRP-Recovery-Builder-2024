@@ -104,7 +104,7 @@ jobs:
         
     - name: Clean Repo
       run: |
-      rm -rf device/transsion/mt6789-common
+      rm -rf /device/transsion/mt6789-common
       
     - name: Install Git-Repo
       run: |
