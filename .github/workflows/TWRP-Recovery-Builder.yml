@@ -95,16 +95,13 @@ jobs:
         sudo add-apt-repository universe
         sudo apt -y install libncurses5
         sudo apt -y install zsh
+        rm -rf /device/transsion/mt6789-common
 
     - name: Install OpenJDK
       uses: actions/setup-java@v4
       with:
         distribution: zulu
         java-version: 8
-        
-    - name: Clean Repo
-      run: |
-      rm -rf /device/transsion/mt6789-common
       
     - name: Install Git-Repo
       run: |
